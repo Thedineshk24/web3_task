@@ -2,10 +2,7 @@ import React from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import {
-    fullscreenMapSelector,
-    isFullscreenMapToggled,
-} from '../../store/reducers/UI';
+import { fullscreenMapSelector } from '../../store/reducers/WEB3';
 
 import { MapView, SearchWidget } from '../../components/ArcGIS';
 import { WEB_MAP_ID } from '../../constants/map';
@@ -21,7 +18,7 @@ const ToggleBtn: React.FC = () => {
         <button
             className="btn absolute top-2 right-2 bg-blue-500 text-white py-2 px-4 rounded"
             onClick={() => {
-                dispatch(isFullscreenMapToggled());
+                // dispatch(isFullscreenMapToggled());
             }}
         >
             {!fullscreenMap ? 'open full screen map' : 'close full screen'}

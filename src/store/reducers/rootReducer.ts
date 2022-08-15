@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import UI from './UI';
+import WEB3 from './WEB3';
 
 export default combineReducers({
-    UI,
+    WEB3,
 });

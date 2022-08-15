@@ -1,0 +1,23 @@
+.stats__boxe1 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 25%;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats__boxe2 {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 25%;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

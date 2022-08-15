@@ -1,8 +1,8 @@
 import { PartialRootState } from './configureStore';
 
-import { initialUIState, UIState } from '../store/reducers/UI';
+import { initialUIState, WEB3State } from './reducers/WEB3';
 
-const getPreloadedUIState = (): UIState => {
+const getPreloadedUIState = (): WEB3State => {
     return {
         ...initialUIState,
     };
@@ -10,7 +10,7 @@ const getPreloadedUIState = (): UIState => {
 
 const getPreloadedState = (): PartialRootState => {
     return {
-        UI: getPreloadedUIState(),
+        WEB3: getPreloadedUIState(),
     };
 };
 

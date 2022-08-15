@@ -7,30 +7,30 @@ import {
 
 import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
-export type UIState = {
-    fullscreenMap?: boolean;
+export type WEB3State = {
+    id?: string | number;
 };
 
-export const initialUIState: UIState = {
-    fullscreenMap: false,
+export const initialUIState: WEB3State = {
+    id: '',
 };
 
 const slice = createSlice({
-    name: 'UI',
+    name: 'WEB3',
     initialState: initialUIState,
     reducers: {
-        isFullscreenMapToggled: (state) => {
-            state.fullscreenMap = !state.fullscreenMap;
+        setIdFunction: (state, action: PayloadAction<string | number>) => {
+            state.id = action.payload;
         },
     },
 });
 
 const { reducer } = slice;
 
-export const { isFullscreenMapToggled } = slice.actions;
+export const { setIdFunction } = slice.actions;
 
 export const fullscreenMapSelector = createSelector(
-    (state: RootState) => state.UI.fullscreenMap,
+    (state: RootState) => state.WEB3.id,
     (fullscreenMap) => fullscreenMap
 );
 
