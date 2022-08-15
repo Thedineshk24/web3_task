@@ -11,7 +11,7 @@ declare global {
     }
 }
 
-const SignUp: React.FC<Props> = () => {
+const SignUp: React.FC = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
